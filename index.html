@@ -1,0 +1,1568 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مخطط العمل العملياتي والاستراتيجي — تعاونية تربية النحل وإنتاج العسل المتميز</title>
+  
+  <!-- Google Fonts: Cairo & Tajawal for modern Arabic typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Tailwind Configuration for Honey & Slate Arabic Theme -->
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            amber: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              200: '#fde68a',
+              300: '#fcd34d',
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+              800: '#92400e',
+              900: '#78350f',
+              950: '#451a03',
+            },
+            honey: {
+              base: '#d97706',
+              gold: '#f59e0b',
+              light: '#fef3c7',
+              dark: '#0f172a',
+              surface: '#0b0f19',
+              card: '#1e293b',
+              border: 'rgba(245, 158, 11, 0.2)'
+            }
+          },
+          fontFamily: {
+            sans: ['"Cairo"', '"Tajawal"', 'sans-serif'],
+            heading: ['"Tajawal"', '"Cairo"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+    }
+
+    ::-webkit-scrollbar {
+      width: 7px;
+      height: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0b0f19;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #334155;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #f59e0b;
+    }
+
+    .honeycomb-pattern {
+      background-color: #0b0f19;
+      background-image: radial-gradient(rgba(245, 158, 11, 0.1) 1.2px, transparent 0);
+      background-size: 26px 26px;
+    }
+
+    .glass-card {
+      background: rgba(30, 41, 59, 0.65);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(245, 158, 11, 0.16);
+      transition: all 0.25s ease-in-out;
+    }
+    
+    .glass-card:hover {
+      border-color: rgba(245, 158, 11, 0.45);
+      box-shadow: 0 10px 30px -10px rgba(245, 158, 11, 0.12);
+    }
+
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #fef08a 0%, #fbbf24 45%, #d97706 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Print Formatting */
+    @media print {
+      body {
+        background: #ffffff !important;
+        color: #000000 !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .glass-card {
+        background: #ffffff !important;
+        border: 1px solid #d1d5db !important;
+        color: #111827 !important;
+        box-shadow: none !important;
+      }
+      .text-slate-300, .text-slate-400, .text-slate-200 {
+        color: #374151 !important;
+      }
+      .gold-gradient-text {
+        color: #b45309 !important;
+        -webkit-text-fill-color: initial !important;
+      }
+      .print-break {
+        page-break-before: always;
+      }
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased honeycomb-pattern min-h-screen flex flex-col selection:bg-amber-500 selection:text-slate-950">
+
+  <header class="sticky top-0 z-50 glass-card border-b border-amber-500/20 bg-slate-950/85 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo & Cooperative Branding -->
+        <div class="flex items-center space-x-3 space-x-reverse">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-amber-600 via-amber-500 to-yellow-300 p-0.5 shadow-lg shadow-amber-500/20 flex items-center justify-center">
+            <div class="w-full h-full bg-slate-950 rounded-[14px] flex items-center justify-center">
+              <i data-lucide="hexagon" class="w-6 h-6 text-amber-400 fill-amber-400/25"></i>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-xs uppercase tracking-wider font-extrabold text-amber-400">قطاع تربية النحل بالمغرب</span>
+              <span class="text-[10px] bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded-full border border-emerald-500/30 font-bold">معايير ONSSA</span>
+            </div>
+            <h1 class="text-lg font-bold text-white tracking-tight">الخطة الاستراتيجية والعملياتية للتعاونية</h1>
+          </div>
+        </div>
+
+        <!-- Quick Desktop Nav -->
+        <nav class="hidden lg:flex items-center space-x-1 space-x-reverse text-sm font-medium">
+          <a href="#phases-grid" class="px-3 py-2 rounded-xl text-slate-300 hover:text-amber-400 hover:bg-slate-800/60 transition">المراحل الست</a>
+          <a href="#transhumance-section" class="px-3 py-2 rounded-xl text-slate-300 hover:text-amber-400 hover:bg-slate-800/60 transition">الترحال الرعوي</a>
+          <a href="#honey-flow-section" class="px-3 py-2 rounded-xl text-slate-300 hover:text-amber-400 hover:bg-slate-800/60 transition">وحدة الاستخلاص</a>
+          <a href="#professional-dashboard" class="px-3 py-2 rounded-xl text-slate-300 hover:text-amber-400 hover:bg-slate-800/60 transition">لوحة القيادة</a>
+          <a href="#simulator-section" class="px-3 py-2 rounded-xl text-amber-400 bg-amber-500/10 border border-amber-500/30 hover:bg-amber-500/20 transition flex items-center gap-1.5 font-bold">
+            <i data-lucide="check-circle-2" class="w-4 h-4"></i> محاكي الجودة
+          </a>
+          <a href="#annual-matrix" class="px-3 py-2 rounded-xl text-slate-300 hover:text-amber-400 hover:bg-slate-800/60 transition">الروزنامة السنوية</a>
+        </nav>
+
+        <!-- Actions -->
+        <div class="flex items-center space-x-2 space-x-reverse">
+          <button onclick="window.print()" class="no-print inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-500 hover:to-amber-400 text-slate-950 font-bold text-xs sm:text-sm rounded-xl shadow-md shadow-amber-600/25 transition active:scale-95">
+            <i data-lucide="printer" class="w-4 h-4"></i>
+            <span>طباعة الدليل / PDF</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="relative overflow-hidden py-14 sm:py-20 border-b border-slate-800">
+    <div class="absolute -top-20 -right-20 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-20 -left-20 w-96 h-96 bg-yellow-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center max-w-4xl mx-auto">
+        
+        <!-- Standard Badges -->
+        <div class="flex flex-wrap items-center justify-center gap-2 mb-6">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-slate-900 border border-amber-500/40 text-amber-300">
+            <i data-lucide="shield-check" class="w-3.5 h-3.5 text-amber-400"></i> معايير FAO & Apimondia
+          </span>
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-slate-900 border border-emerald-500/40 text-emerald-300">
+            <i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-400"></i> معيار NM 08.5.600 ومطابقة ONSSA
+          </span>
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-slate-900 border border-blue-500/40 text-blue-300">
+            <i data-lucide="award" class="w-3.5 h-3.5 text-blue-400"></i> دستور الأغذية Codex Stan 12-1981
+          </span>
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-slate-900 border border-purple-500/40 text-purple-300">
+            <i data-lucide="flower" class="w-3.5 h-3.5 text-purple-400"></i> استراتيجية الجيل الأخضر (Génération Green)
+          </span>
+        </div>
+
+        <h2 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white mb-6 leading-tight">
+          مخطط العمل العملياتي والاستراتيجي <br>
+          <span class="gold-gradient-text">لتعاونية إنتاج وتسويق العسل المتميز</span>
+        </h2>
+        
+        <p class="text-base sm:text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed font-light">
+          الدليل المرجعي الشامل لتدبير المناحل، التتبع الصحي الجماعي، استخلاص العسل في وحدات عصرية معتمدة،
+          وتثمين المنتجات عبر علامات الجودة والمؤشرات الجغرافية المحمية للولوج للأسواق الكبرى والتصدير.
+        </p>
+
+        <!-- KPI Metrics Grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-12 text-right">
+          <div class="glass-card p-4 sm:p-5 rounded-2xl border border-slate-800">
+            <div class="flex items-center justify-between text-amber-400 mb-2">
+              <span class="text-xs uppercase tracking-wider font-bold text-slate-400">المحاور الاستراتيجية</span>
+              <i data-lucide="layers" class="w-4 h-4"></i>
+            </div>
+            <div class="text-2xl sm:text-3xl font-black text-white">6 مراحل</div>
+            <p class="text-xs text-slate-400 mt-1">من الخلية إلى الأسواق الدولية</p>
+          </div>
+
+          <div class="glass-card p-4 sm:p-5 rounded-2xl border border-slate-800">
+            <div class="flex items-center justify-between text-emerald-400 mb-2">
+              <span class="text-xs uppercase tracking-wider font-bold text-slate-400">الرطوبة القصوى</span>
+              <i data-lucide="droplet" class="w-4 h-4"></i>
+            </div>
+            <div class="text-2xl sm:text-3xl font-black text-emerald-400 font-mono">≤ 18-20%</div>
+            <p class="text-xs text-slate-400 mt-1">ضمان التخمير المعدوم واستقرار العسل</p>
+          </div>
+
+          <div class="glass-card p-4 sm:p-5 rounded-2xl border border-slate-800">
+            <div class="flex items-center justify-between text-amber-400 mb-2">
+              <span class="text-xs uppercase tracking-wider font-bold text-slate-400">مواسم الفيض</span>
+              <i data-lucide="map-pin" class="w-4 h-4"></i>
+            </div>
+            <div class="text-2xl sm:text-3xl font-black text-amber-400">5 محطات</div>
+            <p class="text-xs text-slate-400 mt-1">الحوامض، الكاليبتوس، الدغموس، الزعتر</p>
+          </div>
+
+          <div class="glass-card p-4 sm:p-5 rounded-2xl border border-slate-800">
+            <div class="flex items-center justify-between text-yellow-400 mb-2">
+              <span class="text-xs uppercase tracking-wider font-bold text-slate-400">مؤشر HMF الطزاجة</span>
+              <i data-lucide="thermometer-sun" class="w-4 h-4"></i>
+            </div>
+            <div class="text-2xl sm:text-3xl font-black text-yellow-400 font-mono">≤ 40 mg/kg</div>
+            <p class="text-xs text-slate-400 mt-1">استخلاص بارد لا يتجاوز 40° مئوية</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="phases-grid" class="py-12 bg-slate-900/50 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+        <div>
+          <span class="text-xs font-extrabold text-amber-400 uppercase tracking-widest">سلسلة القيمة المتكاملة</span>
+          <h3 class="text-2xl sm:text-3xl font-bold text-white mt-1">مخطط التنفيذ في 6 محطات رئيسية</h3>
+        </div>
+        <p class="text-xs sm:text-sm text-slate-400 max-w-md">
+          اضغط على أي مرحلة للانتقال الفوري إلى التفاصيل الفنية، الضوابط الصحية ومصفوفة التدبير العملياتي.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+        <button onclick="scrollToSection('phase-1')" class="group p-4 rounded-2xl glass-card text-right transition hover:-translate-y-1 hover:border-amber-400/60 focus:ring-2 focus:ring-amber-400">
+          <div class="w-8 h-8 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center font-black text-sm mb-3 group-hover:bg-amber-500 group-hover:text-slate-950 transition">01</div>
+          <h4 class="font-bold text-sm text-white group-hover:text-amber-300">الحكامة والاستثمار</h4>
+          <p class="text-[11px] text-slate-400 mt-1 line-clamp-2">SCI، عقود الإلزام، إحداثيات GPS، وتوحيد الصناديق.</p>
+        </button>
+
+        <button onclick="scrollToSection('phase-2')" class="group p-4 rounded-2xl glass-card text-right transition hover:-translate-y-1 hover:border-amber-400/60 focus:ring-2 focus:ring-amber-400">
+          <div class="w-8 h-8 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center font-black text-sm mb-3 group-hover:bg-amber-500 group-hover:text-slate-950 transition">02</div>
+          <h4 class="font-bold text-sm text-white group-hover:text-amber-300">توطين المناحل</h4>
+          <p class="text-[11px] text-slate-400 mt-1 line-clamp-2">مسافة أمان &gt; 3 كلم، السلالات التلية والصحراوية.</p>
+        </button>
+
+        <button onclick="scrollToSection('phase-3')" class="group p-4 rounded-2xl glass-card text-right transition hover:-translate-y-1 hover:border-amber-400/60 focus:ring-2 focus:ring-amber-400">
+          <div class="w-8 h-8 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center font-black text-sm mb-3 group-hover:bg-amber-500 group-hover:text-slate-950 transition">03</div>
+          <h4 class="font-bold text-sm text-white group-hover:text-amber-300">التتبع والوقاية الصحية</h4>
+          <p class="text-[11px] text-slate-400 mt-1 line-clamp-2">علاج الفاروا الموحد 2 سنوياً وسجل المنحل 5 سنوات.</p>
+        </button>
+
+        <button onclick="scrollToSection('phase-4')" class="group p-4 rounded-2xl glass-card text-right transition hover:-translate-y-1 hover:border-amber-400/60 focus:ring-2 focus:ring-amber-400">
+          <div class="w-8 h-8 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center font-black text-sm mb-3 group-hover:bg-amber-500 group-hover:text-slate-950 transition">04</div>
+          <h4 class="font-bold text-sm text-white group-hover:text-amber-300">الفيض والترحال</h4>
+          <p class="text-[11px] text-slate-400 mt-1 line-clamp-2">5 محطات رعوية من الغرب إلى سوس ووقف التغذية J-15.</p>
+        </button>
+
+        <button onclick="scrollToSection('phase-5')" class="group p-4 rounded-2xl glass-card text-right transition hover:-translate-y-1 hover:border-amber-400/60 focus:ring-2 focus:ring-amber-400">
+          <div class="w-8 h-8 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center font-black text-sm mb-3 group-hover:bg-amber-500 group-hover:text-slate-950 transition">05</div>
+          <h4 class="font-bold text-sm text-white group-hover:text-amber-300">الجني والاستخلاص</h4>
+          <p class="text-[11px] text-slate-400 mt-1 line-clamp-2">2/3 تشتية، وحدة Inox 316 معتمدة ومطابقة التحاليل.</p>
+        </button>
+
+        <button onclick="scrollToSection('phase-6')" class="group p-4 rounded-2xl glass-card text-right transition hover:-translate-y-1 hover:border-amber-400/60 focus:ring-2 focus:ring-amber-400">
+          <div class="w-8 h-8 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center font-black text-sm mb-3 group-hover:bg-amber-500 group-hover:text-slate-950 transition">06</div>
+          <h4 class="font-bold text-sm text-white group-hover:text-amber-300">التثمين والتسويق</h4>
+          <p class="text-[11px] text-slate-400 mt-1 line-clamp-2">المؤشرات الجغرافية IGP، ملصق ONSSA وكسر موسمية رمضان.</p>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+
+    <!-- PHASE 1 -->
+    <article id="phase-1" class="glass-card rounded-3xl p-6 sm:p-8 relative overflow-hidden">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-5 mb-6 flex-wrap gap-4">
+        <div class="flex items-center gap-3">
+          <span class="w-11 h-11 rounded-2xl bg-amber-500 text-slate-950 flex items-center justify-center font-black text-xl shadow-lg shadow-amber-500/25">1</span>
+          <div>
+            <span class="text-xs font-extrabold text-amber-400 uppercase tracking-widest">المرحلة الأولى • التأسيس والهيكلة</span>
+            <h3 class="text-xl sm:text-2xl font-bold text-white">الحكامة، المطابقة والاستثمار المشترك</h3>
+          </div>
+        </div>
+        <span class="px-3.5 py-1 bg-amber-500/10 text-amber-300 border border-amber-500/25 text-xs font-bold rounded-full">
+          نظام المراقبة الداخلية (SCI / SQI)
+        </span>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- 1.1 -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-2 text-amber-400 font-bold text-base border-r-4 border-amber-500 pr-3">
+            <i data-lucide="file-check-2" class="w-5 h-5"></i>
+            <h4>1.1 الهيكلة القانونية وعقد التزام المنخرطين</h4>
+          </div>
+          <ul class="space-y-3 text-sm text-slate-300 pr-3 border-r border-slate-800">
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-amber-400 mt-1 shrink-0"></i>
+              <span><strong>الإطار المؤسساتي :</strong> مجلس إدارة منتخب، مسير قانوني معتمد، ونظام داخلي يحدد بدقة مسؤوليات وحقوق كل عضو.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-amber-400 mt-1 shrink-0"></i>
+              <span><strong>عقد الالتزام الفردي :</strong> توقيع إلزامي على ميثاق الشرف (منع التغذية السكرية أثناء الفيض، حظر استعمال المضادات الحيوية والمبيدات الفلاحية غير المرخصة، وقبول تفتيش مدققي التعاونية في أي وقت).</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-amber-400 mt-1 shrink-0"></i>
+              <span><strong>نظام المراقبة الداخلية (SCI) :</strong> تعيين مسؤول جودة ومدققين داخليين، ووضع خريطة دقيقة لمواقع مناحل الأعضاء بإحداثيات GPS (مقياس 1/25.000).</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-amber-400 mt-1 shrink-0"></i>
+              <span><strong>مسطرة العقوبات والعزل :</strong> إسقاط عضوية وتجريد الدفعات من علامة التعاونية في حالة رصد غش أو متبقيات كيماوية محظورة.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 1.2 -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-2 text-amber-400 font-bold text-base border-r-4 border-amber-500 pr-3">
+            <i data-lucide="wallet" class="w-5 h-5"></i>
+            <h4>1.2 الاستثمارات المشتركة والدعم العمومي</h4>
+          </div>
+          <ul class="space-y-3 text-sm text-slate-300 pr-3 border-r border-slate-800">
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="boxes" class="w-4 h-4 text-amber-400 mt-1 shrink-0"></i>
+              <span><strong>توحيد عتاد المناحل :</strong> اعتماد نموذج موحد للصناديق (لانغستروث Langstroth 10 إطارات أو دادانت Dadant 10 إطارات) من الخشب غير المعالج كيميائياً، لتسهيل التبادل واستخلاص العسل الجماعي.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="landmark" class="w-4 h-4 text-amber-400 mt-1 shrink-0"></i>
+              <span><strong>تعبئة برامج الدعم بالمغرب :</strong> الاستفادة من برامج وزارة الفلاحة (الجيل الأخضر)، المبادرة الوطنية للتنمية البشرية (INDH)، ودعم صندوق التنمية الفلاحية بنسبة 30% على العتاد وخلايا النحل الجديدة.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="layers" class="w-4 h-4 text-amber-400 mt-1 shrink-0"></i>
+              <span><strong>وحدة تشميع مشتركة :</strong> اقتناء آلة طي الشمع المعتمدة لمعالجة شمع الأغطية الطبيعي، وضمان شمع أساس نقي 100% خالٍ من البارافين والمواد البترولية.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- PHASE 2 -->
+    <article id="phase-2" class="glass-card rounded-3xl p-6 sm:p-8 relative overflow-hidden">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-5 mb-6 flex-wrap gap-4">
+        <div class="flex items-center gap-3">
+          <span class="w-11 h-11 rounded-2xl bg-amber-500 text-slate-950 flex items-center justify-center font-black text-xl shadow-lg shadow-amber-500/25">2</span>
+          <div>
+            <span class="text-xs font-extrabold text-amber-400 uppercase tracking-widest">المرحلة الثانية • إدارة الموقع والسلالات</span>
+            <h3 class="text-xl sm:text-2xl font-bold text-white">توطين وتدبير المناحل تقنياً</h3>
+          </div>
+        </div>
+        <span class="px-3.5 py-1 bg-amber-500/10 text-amber-300 border border-amber-500/25 text-xs font-bold rounded-full">
+          الملاءمة الإيكولوجية والسلالات المغربية
+        </span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Site Selection -->
+        <div class="bg-slate-900/70 p-5 rounded-2xl border border-slate-800 space-y-3">
+          <div class="flex items-center gap-2 text-white font-bold">
+            <i data-lucide="shield-alert" class="w-4 h-4 text-amber-400"></i>
+            <h5>المعايير البيئية للموقع</h5>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            الابتعاد بمسافة <strong>لا تقل عن 3 كلم</strong> عن الطرق السيارة، المطارح العمومية، المناطق الصناعية، والضيعات الفلاحية ذات الاستعمال المكثف للمبيدات. توفير مصدات للرياح ومناخ محلي معتدل.
+          </p>
+        </div>
+
+        <!-- Hive Spatial Layout -->
+        <div class="bg-slate-900/70 p-5 rounded-2xl border border-slate-800 space-y-3">
+          <div class="flex items-center gap-2 text-white font-bold">
+            <i data-lucide="compass" class="w-4 h-4 text-amber-400"></i>
+            <h5>التوزيع الهندسي والتشميس</h5>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            توجيه فتحات السروح نحو <strong>الجنوب / الجنوب الشرقي</strong>. رفع الصناديق على حوامل (10 إلى 80 سم) لتفادي الرطوبة وهجوم النمل والزواحف. ترك مسافة 2 إلى 2.5 م بين الصناديق و3 م بين الصفوف لمنع التيهان.
+          </p>
+        </div>
+
+        <!-- Genetic Adaptations -->
+        <div class="bg-slate-900/70 p-5 rounded-2xl border border-slate-800 space-y-3">
+          <div class="flex items-center gap-2 text-white font-bold">
+            <i data-lucide="dna" class="w-4 h-4 text-amber-400"></i>
+            <h5>السلالات المحلية المتأقلمة</h5>
+          </div>
+          <div class="text-xs text-slate-300 space-y-2">
+            <p><strong>• النحل التلي (Apis mellifera intermissa) :</strong> بالسهول، السفوح وهضاب الشمال والوسط.</p>
+            <p><strong>• النحل الصحراوي الأصفر (Apis mellifera sahariensis) :</strong> بواحات الجنوب ومناطق ما وراء الأطلس لتحمله الاستثنائي للجفاف والحرارة فوق 45° مئوية.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Apiary equipment & smoke -->
+      <div class="mt-6 p-4 rounded-2xl bg-amber-500/5 border border-amber-500/20 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs text-slate-300">
+        <div class="flex items-center gap-3">
+          <div class="p-2 bg-amber-500/10 text-amber-400 rounded-xl">
+            <i data-lucide="flame" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <strong class="text-amber-300">بروتوكول التدخين الطبيعي 100% :</strong> استخدام الأعشاب العطرية الجافة، أوراق الكاليبتوس، وروث الماشية المجفف فقط. منع استعمال الكرتون المعالج والمواد البلاستيكية لتفادي تلوث العسل بروائح دخانية أو سموم كيميائية.
+          </div>
+        </div>
+        <span class="shrink-0 px-3 py-1 bg-slate-900 rounded-lg text-slate-300 border border-slate-800 font-bold">بدلات وقاية بيضاء متكاملة</span>
+      </div>
+    </article>
+
+    <!-- PHASE 3 -->
+    <article id="phase-3" class="glass-card rounded-3xl p-6 sm:p-8 relative overflow-hidden">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-5 mb-6 flex-wrap gap-4">
+        <div class="flex items-center gap-3">
+          <span class="w-11 h-11 rounded-2xl bg-amber-500 text-slate-950 flex items-center justify-center font-black text-xl shadow-lg shadow-amber-500/25">3</span>
+          <div>
+            <span class="text-xs font-extrabold text-amber-400 uppercase tracking-widest">المرحلة الثالثة • الحماية الصحية الشاملة</span>
+            <h3 class="text-xl sm:text-2xl font-bold text-white">التتبع الصحي، النظافة والوقاية الجماعية</h3>
+          </div>
+        </div>
+        <span class="px-3.5 py-1 bg-red-500/10 text-red-300 border border-red-500/30 text-xs font-bold rounded-full">
+          بروتوكول الفاروا الجماعي الإلزامي
+        </span>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- Varroa Protocol -->
+        <div class="lg:col-span-2 bg-slate-900/75 p-6 rounded-2xl border border-slate-800 space-y-4">
+          <div class="flex items-center justify-between">
+            <h4 class="text-base font-bold text-white flex items-center gap-2">
+              <i data-lucide="shield-alert" class="w-5 h-5 text-red-400"></i>
+              مخطط المكافحة المنسقة ضد طفيلي الفاروا (Varroa destructor)
+            </h4>
+            <span class="text-xs text-amber-400 font-mono font-bold">نسبة النجاعة المطلوبة &gt; 90%</span>
+          </div>
+
+          <p class="text-xs text-slate-300 leading-relaxed">
+            يُشترط أن تنفذ كل العمليات العلاجية بشكل <strong>متزامن وجماعي بين جميع أعضاء التعاونية</strong> في نفس الأسبوع لتفادي عودة العدوى المتقاطعة بين المناحل المجاورة. يُمنع منعاً باتاً العلاج أثناء وجود العاسلات.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <div class="p-4 rounded-xl bg-slate-950/70 border-r-4 border-amber-500">
+              <div class="text-xs font-bold text-amber-400 uppercase">العلاج الأول • نهاية الصيف</div>
+              <div class="text-sm font-bold text-white mt-1">أواخر غشت / مطلع شتنبر</div>
+              <div class="text-xs text-slate-400 mt-1">مباشرة بعد رفع آخر عاسلات الجني، لحماية جيل النحل الشتوي.</div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-950/70 border-r-4 border-blue-500">
+              <div class="text-xs font-bold text-blue-400 uppercase">العلاج الثاني • فصل الشتاء</div>
+              <div class="text-sm font-bold text-white mt-1">أواخر دجنبر / مطلع يناير</div>
+              <div class="text-xs text-slate-400 mt-1">خلال فترة انحباس أو تقليص الحضنة للوصول إلى الفاروا الحرة.</div>
+            </div>
+          </div>
+
+          <div class="text-xs text-amber-200/90 bg-amber-950/20 p-3.5 rounded-xl border border-amber-500/20">
+            <strong>استراتيجية مكافحة المناعة :</strong> التناوب المنتظم للمواد الفعالة المصادق عليها بيطرياً. الحظر التام لاستخدام المبيدات الفلاحية الخطيرة غير الموجهة للنحل.
+          </div>
+        </div>
+
+        <!-- Hygiene and Foulbrood -->
+        <div class="bg-slate-900/75 p-6 rounded-2xl border border-slate-800 space-y-4">
+          <h4 class="text-base font-bold text-white flex items-center gap-2">
+            <i data-lucide="flame" class="w-5 h-5 text-amber-400"></i>
+            النظافة والأمراض الخطيرة
+          </h4>
+
+          <div class="space-y-3 text-xs text-slate-300">
+            <div class="p-3 rounded-xl bg-slate-950/50 border border-slate-800">
+              <strong class="text-amber-300 block mb-1">تجديد الشمع السنوي :</strong>
+              تجديد إلزامي لنسبة <strong>20% إلى 33%</strong> من أقدم إطارات الحضنة سنوياً للتخلص من المسببات الميكروبية ومتبقيات الأدوية.
+            </div>
+
+            <div class="p-3 rounded-xl bg-slate-950/50 border border-slate-800">
+              <strong class="text-amber-300 block mb-1">التطهير باللهب :</strong>
+              حرق سطحي منتظم بالمشعل الحراري (Chalumeau) لقواعد وصناديق الخشب وغلي العتاد المعدني.
+            </div>
+
+            <div class="p-3 rounded-xl bg-red-950/20 border border-red-500/30">
+              <strong class="text-red-400 block mb-1">تعفن الحضنة الأمريكي (Loque) :</strong>
+              <strong>منع المضادات الحيوية مطلقاً.</strong> حرق فوري للمستعمرات المصابة وردمها مع إبلاغ المصالح البيطرية الرسمية (ONSSA).
+            </div>
+
+            <div class="p-3 rounded-xl bg-slate-950/50 border border-slate-800">
+              <strong class="text-amber-300 block mb-1">سجل المنحل البيطري :</strong>
+              مسك دفتر صحي لكل منحل يُحفظ قانونياً <strong>لمدة 5 سنوات كاملة</strong> لتتبع كل تدخل.
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- PHASE 4 -->
+    <article id="phase-4" class="glass-card rounded-3xl p-6 sm:p-8 relative overflow-hidden">
+      <div id="transhumance-section" class="flex items-center justify-between border-b border-slate-800 pb-5 mb-6 flex-wrap gap-4">
+        <div class="flex items-center gap-3">
+          <span class="w-11 h-11 rounded-2xl bg-amber-500 text-slate-950 flex items-center justify-center font-black text-xl shadow-lg shadow-amber-500/25">4</span>
+          <div>
+            <span class="text-xs font-extrabold text-amber-400 uppercase tracking-widest">المرحلة الرابعة • الترحال والمراعي المغربية</span>
+            <h3 class="text-xl sm:text-2xl font-bold text-white">تدبير مواسم الفيض، التغذية والترحال الرعوي</h3>
+          </div>
+        </div>
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-300 border border-emerald-500/30 text-xs font-bold rounded-full">
+          خارطة المراعي والأعسال التخصصية بالمغرب
+        </span>
+      </div>
+
+      <!-- Feeding Rules -->
+      <div class="mb-8 grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+        <div class="p-4 rounded-2xl bg-slate-900 border border-slate-800">
+          <div class="font-bold text-amber-400 mb-1 flex items-center gap-2">
+            <i data-lucide="ban" class="w-4 h-4"></i> ميثاق أصالة العسل
+          </div>
+          <p class="text-slate-300">
+            <strong>وقف التغذية السكرية نهائياً قبل 15 يوماً على الأقل</strong> من انطلاق موسم التزهير. حظر وضع أي محاليل سكرية أثناء تثبيت العاسلات منعاً لأي غش طبيعي.
+          </p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-slate-900 border border-slate-800">
+          <div class="font-bold text-emerald-400 mb-1 flex items-center gap-2">
+            <i data-lucide="sparkle" class="w-4 h-4"></i> التحفيز الربيعي
+          </div>
+          <p class="text-slate-300">
+            محلول سكري خفيف (50% سكر / 50% ماء نقي) في أواخر الشتاء لتحفيز الملكة على وضع البيض وبناء جيش النحل السارح قبل تزهير الحوامض.
+          </p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-slate-900 border border-slate-800">
+          <div class="font-bold text-blue-400 mb-1 flex items-center gap-2">
+            <i data-lucide="snowflake" class="w-4 h-4"></i> التغذية الشتوية (كاندي)
+          </div>
+          <p class="text-slate-300">
+            محلول مركز (75% سكر) أو عجينة الكاندي حصراً في فترات الجدب الشتوي، مع ضمان بقاء 5 كلغ من العسل بالصندوق كاحتياطي دائم و 15-20 كلغ للتشتية.
+          </p>
+        </div>
+      </div>
+
+      <!-- Transhumance Table for Morocco -->
+      <div class="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-950/60">
+        <table class="w-full text-right text-xs sm:text-sm">
+          <thead class="bg-slate-900 text-amber-400 font-bold text-xs uppercase tracking-wider border-b border-slate-800">
+            <tr>
+              <th class="py-4 px-4">المحطة</th>
+              <th class="py-4 px-4">الفترة الزمنية</th>
+              <th class="py-4 px-4">المناطق الجغرافية بالمغرب</th>
+              <th class="py-4 px-4">المصدر الزهري ونوع العسل</th>
+              <th class="py-4 px-4 text-center">الميزة الاقتصادية</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-800 text-slate-300">
+            <tr class="hover:bg-slate-900/60 transition">
+              <td class="py-3.5 px-4 font-bold text-white flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-300 flex items-center justify-center text-xs">1</span>
+                الفيض الأول
+              </td>
+              <td class="py-3.5 px-4 font-mono text-amber-300">فبراير / مارس – أبريل</td>
+              <td class="py-3.5 px-4 font-medium">سهول الغرب، سوس، بركان، وتادلة</td>
+              <td class="py-3.5 px-4 font-semibold text-white">بساتين الحوامض والليمون <span class="text-xs text-amber-400 block font-normal">(عسل البرتقال)</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="px-2.5 py-1 rounded-full bg-amber-500/10 text-amber-300 text-xs font-bold">إنتاج غزير ومبكر</span></td>
+            </tr>
+
+            <tr class="hover:bg-slate-900/60 transition">
+              <td class="py-3.5 px-4 font-bold text-white flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-300 flex items-center justify-center text-xs">2</span>
+                الفيض الثاني
+              </td>
+              <td class="py-3.5 px-4 font-mono text-amber-300">مارس – ماي</td>
+              <td class="py-3.5 px-4 font-medium">غابات المعمورة، سيدي يحيى الغرب</td>
+              <td class="py-3.5 px-4 font-semibold text-white">غابات الكاليبتوس <span class="text-xs text-slate-400 block font-normal">(Eucalyptus camaldulensis)</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="px-2.5 py-1 rounded-full bg-blue-500/10 text-blue-300 text-xs font-bold">غني بالمعادن والنكتار</span></td>
+            </tr>
+
+            <tr class="hover:bg-slate-900/60 transition">
+              <td class="py-3.5 px-4 font-bold text-white flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-300 flex items-center justify-center text-xs">3</span>
+                الفيض الثالث
+              </td>
+              <td class="py-3.5 px-4 font-mono text-amber-300">ماي – يوليوز</td>
+              <td class="py-3.5 px-4 font-medium">سفوح الأطلس، بني ملال، وأزيلال</td>
+              <td class="py-3.5 px-4 font-semibold text-white">الدغموس / الزقوم الشوكي <span class="text-xs text-amber-400 block font-normal">(Euphorbia resinifera)</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="px-2.5 py-1 rounded-full bg-purple-500/10 text-purple-300 text-xs font-bold">عسل علاجي ذو قيمة عالية (IGP)</span></td>
+            </tr>
+
+            <tr class="hover:bg-slate-900/60 transition">
+              <td class="py-3.5 px-4 font-bold text-white flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-300 flex items-center justify-center text-xs">4</span>
+                الفيض الرابع
+              </td>
+              <td class="py-3.5 px-4 font-mono text-amber-300">يوليوز – غشت</td>
+              <td class="py-3.5 px-4 font-medium">الأطلس الكبير الغربي (إنزركي) والأطلس الصغير (> 900 م)</td>
+              <td class="py-3.5 px-4 font-semibold text-white">الزعتر الجبلي البري <span class="text-xs text-slate-400 block font-normal">(Thymus satureioides)</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-300 text-xs font-bold">أعسال جبلية ممتازة</span></td>
+            </tr>
+
+            <tr class="hover:bg-slate-900/60 transition">
+              <td class="py-3.5 px-4 font-bold text-white flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-300 flex items-center justify-center text-xs">5</span>
+                الفيض الخامس
+              </td>
+              <td class="py-3.5 px-4 font-mono text-amber-300">غشت – نونبر</td>
+              <td class="py-3.5 px-4 font-medium">سوس ماسة، آيت باعمران، الشريط الساحلي</td>
+              <td class="py-3.5 px-4 font-semibold text-white">الدغموس الساحلي (التيكوت) وأشجار الخروب</td>
+              <td class="py-3.5 px-4 text-center"><span class="px-2.5 py-1 rounded-full bg-yellow-500/10 text-yellow-300 text-xs font-bold">تأمين خريف المستعمرات</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Logistics transportation note -->
+      <div class="mt-4 p-4 bg-slate-900/80 rounded-2xl border border-slate-800 flex items-center gap-3 text-xs text-slate-300">
+        <i data-lucide="truck" class="w-5 h-5 text-amber-400 shrink-0"></i>
+        <span><strong>شروط نقل الخلايا وترحالها :</strong> النقل ليلاً حصراً، إغلاق فتحات السروح بشباك تهوية، ربط الصناديق بأحزمة تثبيت قوية وتغطية الشاحنة بشبكة مهواة تمنع هروب النحل واختناقه.</span>
+      </div>
+    </article>
+
+    <!-- PHASE 5 -->
+    <article id="phase-5" class="glass-card rounded-3xl p-6 sm:p-8 relative overflow-hidden">
+      <div id="honey-flow-section" class="flex items-center justify-between border-b border-slate-800 pb-5 mb-6 flex-wrap gap-4">
+        <div class="flex items-center gap-3">
+          <span class="w-11 h-11 rounded-2xl bg-amber-500 text-slate-950 flex items-center justify-center font-black text-xl shadow-lg shadow-amber-500/25">5</span>
+          <div>
+            <span class="text-xs font-extrabold text-amber-400 uppercase tracking-widest">المرحلة الخامسة • وحدة الاستخلاص والتحاليل</span>
+            <h3 class="text-xl sm:text-2xl font-bold text-white">الجني، وحدة استخلاص العسل ومراقبة الجودة</h3>
+          </div>
+        </div>
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-300 border border-emerald-500/30 text-xs font-bold rounded-full">
+          مطابقة المعيار المغربي NM 08.5.600
+        </span>
+      </div>
+
+      <!-- Pipeline 6 Steps -->
+      <div class="mb-10">
+        <h4 class="text-xs sm:text-sm uppercase tracking-wider font-extrabold text-amber-400 mb-4 flex items-center gap-2">
+          <i data-lucide="arrow-left-circle" class="w-4 h-4"></i> مراحل استخلاص العسل وفق مبدأ السير إلى الأمام (Marche en avant)
+        </h4>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-3">
+          <div class="p-4 rounded-2xl bg-slate-900 border border-slate-800">
+            <span class="text-xs font-black text-amber-500 font-mono">01</span>
+            <div class="font-bold text-white text-sm mt-1">الجني بالمنحل</div>
+            <p class="text-[11px] text-slate-400 mt-1">تشتية الإطارات بنسبة ≥ 2/3. منع إطارات الحضنة تماماً. وضع مصارف النحل قبل 24 ساعة.</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-slate-900 border border-slate-800">
+            <span class="text-xs font-black text-amber-500 font-mono">02</span>
+            <div class="font-bold text-white text-sm mt-1">كشط الشمع</div>
+            <p class="text-[11px] text-slate-400 mt-1">أحواض وسكاكين غير قابلة للصدأ (Inox). عزل شمع الأغطية البكر عالي النقاوة.</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-slate-900 border border-slate-800">
+            <span class="text-xs font-black text-amber-500 font-mono">03</span>
+            <div class="font-bold text-white text-sm mt-1">الفرز بالطرد المركزي</div>
+            <p class="text-[11px] text-slate-400 mt-1">فرازات Inox 316 دون أي تسخين مباشر. درجة حرارة المعالجة أقل من 40° مئوية.</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-slate-900 border border-slate-800">
+            <span class="text-xs font-black text-amber-500 font-mono">04</span>
+            <div class="font-bold text-white text-sm mt-1">التصفية المزدوجة</div>
+            <p class="text-[11px] text-slate-400 mt-1">مصفاة أولى (0.5 إلى 1 مم) ثم مصفاة دقيقة (0.2 إلى 0.5 مم) لحجز الشوائب.</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-slate-900 border border-slate-800">
+            <span class="text-xs font-black text-amber-500 font-mono">05</span>
+            <div class="font-bold text-white text-sm mt-1">النضج والترسيب</div>
+            <p class="text-[11px] text-slate-400 mt-1">مكوث في منضج محكم الإغلاق 7 إلى 10 أيام في حرارة &gt; 20°م، مع كشط الرغوة والفقاعات.</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-slate-900 border border-amber-500/40 bg-amber-500/5">
+            <span class="text-xs font-black text-amber-400 font-mono">06</span>
+            <div class="font-bold text-white text-sm mt-1">التحليل والتعبئة</div>
+            <p class="text-[11px] text-slate-400 mt-1">قياس الرطوبة بالمكسار، وتعبئة في برطمانات زجاجية جديدة معقمة محكمة الإغلاق.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Laboratory Standards Table -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center justify-between">
+            <h4 class="text-xs sm:text-sm font-bold text-white uppercase tracking-wider flex items-center gap-2">
+              <i data-lucide="flask-conical" class="w-4 h-4 text-emerald-400"></i>
+              المعايير الفيزيوكيميائية لمطابقة العسل (Codex / NM 08.5.600)
+            </h4>
+          </div>
+
+          <div class="overflow-x-auto rounded-2xl border border-slate-800">
+            <table class="w-full text-right text-xs">
+              <thead class="bg-slate-900 text-slate-400 font-bold uppercase text-[11px]">
+                <tr>
+                  <th class="py-3 px-3.5">المعيار المخبري</th>
+                  <th class="py-3 px-3.5">الحد القانوني المعتمد</th>
+                  <th class="py-3 px-3.5">الدلالة وضمان الجودة</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-800 text-slate-300">
+                <tr>
+                  <td class="py-3 px-3.5 font-bold text-white">نسبة الرطوبة (الماء)</td>
+                  <td class="py-3 px-3.5 font-mono font-bold text-emerald-400">≤ 18 – 20 %</td>
+                  <td class="py-3 px-3.5">منع التخمر ونمو الخمائر والحفاظ على استقرار العسل.</td>
+                </tr>
+                <tr>
+                  <td class="py-3 px-3.5 font-bold text-white">مركب H.M.F</td>
+                  <td class="py-3 px-3.5 font-mono font-bold text-emerald-400">≤ 40 mg/kg</td>
+                  <td class="py-3 px-3.5">مؤشر طزاجة العسل وغياب أي تسخين حراري مفرط أو تقادم.</td>
+                </tr>
+                <tr>
+                  <td class="py-3 px-3.5 font-bold text-white">مؤشر الإنزيمات (الدياستاز)</td>
+                  <td class="py-3 px-3.5 font-mono font-bold text-emerald-400">≥ 8 وحدات Schade</td>
+                  <td class="py-3 px-3.5">إثبات حيوية ونشاط الإنزيمات الطبيعية المفرزة من النحل.</td>
+                </tr>
+                <tr>
+                  <td class="py-3 px-3.5 font-bold text-white">السكريات المرجعة (غلوكوز + فركتوز)</td>
+                  <td class="py-3 px-3.5 font-mono font-bold text-emerald-400">≥ 60 g / 100 g</td>
+                  <td class="py-3 px-3.5">الأصالة الغذائية والتركيبة السكرية الطبيعية لنكتار الزهور.</td>
+                </tr>
+                <tr>
+                  <td class="py-3 px-3.5 font-bold text-white">السكروز الظاهري</td>
+                  <td class="py-3 px-3.5 font-mono font-bold text-emerald-400">≤ 5 g / 100 g</td>
+                  <td class="py-3 px-3.5">كشف غياب أي غش بمحاليل سكر القصب أو الشمندر.</td>
+                </tr>
+                <tr>
+                  <td class="py-3 px-3.5 font-bold text-white">متبقيات المضادات والمبيدات</td>
+                  <td class="py-3 px-3.5 font-mono font-bold text-emerald-400">منعدمة تماماً (0 ppb)</td>
+                  <td class="py-3 px-3.5">مطابقة حدود المتبقيات القصوى LMR المفروضة دولياً ومغربياً.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Sanitary infrastructure ONSSA -->
+        <div class="bg-slate-900/70 p-5 rounded-2xl border border-slate-800 flex flex-col justify-between space-y-4">
+          <div>
+            <h5 class="font-bold text-white text-sm mb-2 flex items-center gap-2 text-amber-400">
+              <i data-lucide="check-circle" class="w-4 h-4"></i> شروط وحدة الاستخلاص (ONSSA)
+            </h5>
+            <ul class="text-xs text-slate-300 space-y-2.5">
+              <li class="flex items-start gap-2">
+                <i data-lucide="chevron-left" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
+                <span>الفصل الصارم لثلاث مناطق: استلام العاسلات، الفرز والتصفية، والتعبئة والتخزين.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="chevron-left" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
+                <span>أرضيات وجدران ملساء قابلة للغسل، وشباك ناموسية تمنع دخول النحل نهائياً.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="chevron-left" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
+                <span>كل الأجهزة الملامسة للعسل من مادة الإينوكس الغذائي (Inox 316) مع حظر الحديد والزنك.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="p-3 bg-amber-500/10 rounded-xl border border-amber-500/20 text-[11px] text-amber-300">
+            <strong>قاعدة الاستخلاص البارد :</strong> عدم تجاوز درجة حرارة 40° مئوية في كل أطوار الاستخلاص لحماية الإنزيمات والمنافع الطبية للعسل.
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- PHASE 6 -->
+    <article id="phase-6" class="glass-card rounded-3xl p-6 sm:p-8 relative overflow-hidden">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-5 mb-6 flex-wrap gap-4">
+        <div class="flex items-center gap-3">
+          <span class="w-11 h-11 rounded-2xl bg-amber-500 text-slate-950 flex items-center justify-center font-black text-xl shadow-lg shadow-amber-500/25">6</span>
+          <div>
+            <span class="text-xs font-extrabold text-amber-400 uppercase tracking-widest">المرحلة السادسة • السوق والتثمين</span>
+            <h3 class="text-xl sm:text-2xl font-bold text-white">التعليب، الشارات، التتبع والتسويق الحديث</h3>
+          </div>
+        </div>
+        <span class="px-3.5 py-1 bg-amber-500/10 text-amber-300 border border-amber-500/25 text-xs font-bold rounded-full">
+          المؤشرات الجغرافية (IGP) وتنويع المداخيل
+        </span>
+      </div>
+
+      <!-- Commercial channels -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        <div class="p-5 rounded-2xl bg-slate-900 border border-slate-800 space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center">
+            <i data-lucide="store" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-bold text-white text-base">المسالك القصيرة والمباشرة</h4>
+          <ul class="text-xs text-slate-300 space-y-2">
+            <li>• نقطة بيع خاصة بمقر التعاونية</li>
+            <li>• مسالك السياحة الإيكولوجية بمناحل المناظر الطبيعية</li>
+            <li>• المشاركة في المعارض الوطنية والدولية (SIAM)</li>
+          </ul>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-900 border border-slate-800 space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center">
+            <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-bold text-white text-base">المساحات الكبرى والمنصات (GMS)</h4>
+          <ul class="text-xs text-slate-300 space-y-2">
+            <li>• جناح المنتوجات المجالية بالأسواق الكبرى</li>
+            <li>• منصات وكالة التنمية الفلاحية (ADA) اللوجستيكية</li>
+            <li>• محلات الأغذية الصحية وشبكات البيع الإيكولوجي</li>
+          </ul>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-900 border border-slate-800 space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center">
+            <i data-lucide="globe" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-bold text-white text-base">التجارة الرقمية والتصدير</h4>
+          <ul class="text-xs text-slate-300 space-y-2">
+            <li>• متجر إلكتروني خاص وموجه للأعسال التخصصية</li>
+            <li>• استيفاء رخص التصدير نحو دول الخليج والاتحاد الأوروبي</li>
+            <li>• اعتماد بروتوكولات التتبع الفردي عبر رمز QR على كل قارورة</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Legal Labeling & Terroir -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="bg-slate-900/70 p-5 rounded-2xl border border-slate-800 space-y-3">
+          <h4 class="text-sm font-bold text-amber-400 flex items-center gap-2">
+            <i data-lucide="tag" class="w-4 h-4"></i> البيانات الإلزامية على بطاقة العسل الرسمية
+          </h4>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-300">
+            <span class="p-2 rounded-xl bg-slate-950/60 border border-slate-800">✓ التسمية الدقيقة (عسل زهور، عسل نكتار...)</span>
+            <span class="p-2 rounded-xl bg-slate-950/60 border border-slate-800">✓ المصدر النباتي المعتمد (دغموس، زعتر، سدر...)</span>
+            <span class="p-2 rounded-xl bg-slate-950/60 border border-slate-800">✓ الوزن الصافي بالغرام / الكيلوغرام</span>
+            <span class="p-2 rounded-xl bg-slate-950/60 border border-slate-800">✓ رقم الدفعة الفردي (Lot Number) للتتبع</span>
+            <span class="p-2 rounded-xl bg-slate-950/60 border border-slate-800">✓ رقم الاعتماد الصحي لـ ONSSA</span>
+            <span class="p-2 rounded-xl bg-slate-950/60 border border-slate-800">✓ تاريخ التعبئة وتاريخ الاستهلاك الأقصى (DLUO)</span>
+          </div>
+          <div class="p-3 rounded-xl bg-red-500/10 border border-red-500/30 text-[11px] text-red-300 font-bold flex items-center gap-2">
+            <i data-lucide="alert-triangle" class="w-4 h-4 shrink-0"></i>
+            تنبيه صحي إلزامي : «لا يناسب الرضع الأقل من سنة واحدة» (حماية من التسمم الوشيقي Clostridium botulinum).
+          </div>
+        </div>
+
+        <!-- Terroir and Diversification -->
+        <div class="bg-slate-900/70 p-5 rounded-2xl border border-slate-800 space-y-3">
+          <h4 class="text-sm font-bold text-amber-400 flex items-center gap-2">
+            <i data-lucide="award" class="w-4 h-4"></i> المؤشرات الجغرافية ومنتجات الخلية الأخرى
+          </h4>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            الانخراط في مساطر نيل الشارات المميزة للمنشأ (مثل <em>عسل دغموس تادلة أزيلال IGP</em>، <em>عسل سدر الصحراء</em>، أو <em>عسل أربوز جبل مولاي عبد السلام</em>)، مع تدريب النحالين على جني مدخلات الخلية عالية المردودية لتنويع مصادر الدخل:
+          </p>
+          <div class="grid grid-cols-3 gap-2 text-center text-xs">
+            <div class="p-3 rounded-xl bg-slate-950/80 border border-slate-800">
+              <span class="text-amber-400 font-bold block text-sm">حبوب اللقاح</span>
+              <span class="text-[10px] text-slate-400">مصائد حبوب طازجة</span>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-950/80 border border-slate-800">
+              <span class="text-amber-400 font-bold block text-sm">البروبوليس</span>
+              <span class="text-[10px] text-slate-400">شباك العكبر الطبيعي</span>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-950/80 border border-slate-800">
+              <span class="text-amber-400 font-bold block text-sm">الغذاء الملكي</span>
+              <span class="text-[10px] text-slate-400">كؤوس تربية الملكات</span>
+            </div>
+          </div>
+          <p class="text-[11px] text-slate-400 italic">
+            <strong>كسر موسمية الاستهلاك :</strong> تنظيم حملات توعوية لتشجيع استهلاك العسل طيلة فصول السنة كغذاء وقائي صحي، وتجاوز حصره التاريخي في شهر رمضان فقط.
+          </p>
+        </div>
+      </div>
+    </article>
+
+
+
+    <!-- PROFESSIONAL OPERATIONAL DASHBOARD -->
+    <article id="professional-dashboard" class="glass-card rounded-3xl p-6 sm:p-8 relative overflow-hidden border border-amber-500/30">
+      <div class="absolute -top-20 -left-20 w-72 h-72 bg-amber-500/5 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="flex items-center justify-between border-b border-slate-800 pb-5 mb-6 flex-wrap gap-4 relative z-10">
+        <div class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-2xl bg-amber-500 text-slate-950 flex items-center justify-center shadow-lg shadow-amber-500/25">
+            <i data-lucide="gauge" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <span class="text-xs font-extrabold text-amber-400 uppercase tracking-widest">لوحة قيادة مهنية • متابعة التنفيذ</span>
+            <h3 class="text-xl sm:text-2xl font-bold text-white">نظام التتبع التشغيلي للتعاونية من المنحل إلى البيع</h3>
+          </div>
+        </div>
+        <div class="flex items-center gap-2 no-print">
+          <button onclick="savePilotageState()" class="px-3.5 py-1.5 rounded-xl text-xs bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold flex items-center gap-1.5 transition active:scale-95">
+            <i data-lucide="save" class="w-3.5 h-3.5"></i> حفظ التتبع
+          </button>
+          <button onclick="resetPilotageState()" class="px-3.5 py-1.5 rounded-xl text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 flex items-center gap-1.5 transition">
+            <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i> إعادة الضبط
+          </button>
+        </div>
+      </div>
+
+      <!-- Readiness KPIs -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8 relative z-10">
+        <div class="p-4 rounded-2xl bg-slate-900/80 border border-slate-800">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-[11px] font-bold text-slate-400">جاهزية النظام</span>
+            <i data-lucide="activity" class="w-4 h-4 text-amber-400"></i>
+          </div>
+          <div id="readiness-percent" class="text-3xl font-black text-amber-400 font-mono">0%</div>
+          <div class="w-full h-1.5 bg-slate-800 rounded-full mt-2 overflow-hidden"><div id="readiness-bar" class="h-full bg-amber-500 rounded-full transition-all duration-300" style="width:0%"></div></div>
+        </div>
+        <div class="p-4 rounded-2xl bg-slate-900/80 border border-slate-800">
+          <div class="flex items-center justify-between mb-2"><span class="text-[11px] font-bold text-slate-400">نقاط التحكم المنجزة</span><i data-lucide="list-checks" class="w-4 h-4 text-emerald-400"></i></div>
+          <div class="text-3xl font-black text-white font-mono"><span id="controls-done">0</span><span class="text-sm text-slate-500"> / 12</span></div>
+          <p class="text-[10px] text-slate-500 mt-1">حكامة، صحة، استخلاص، تتبع وسوق</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-slate-900/80 border border-slate-800">
+          <div class="flex items-center justify-between mb-2"><span class="text-[11px] font-bold text-slate-400">وضع الدفعة الحالية</span><i data-lucide="package-check" class="w-4 h-4 text-blue-400"></i></div>
+          <div id="lot-status-kpi" class="text-lg font-black text-slate-300">غير مُنشأة</div>
+          <p id="lot-status-sub" class="text-[10px] text-slate-500 mt-1">أنشئ بطاقة تتبع للدفعة</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-slate-900/80 border border-slate-800">
+          <div class="flex items-center justify-between mb-2"><span class="text-[11px] font-bold text-slate-400">الهامش الإجمالي التقديري</span><i data-lucide="circle-dollar-sign" class="w-4 h-4 text-yellow-400"></i></div>
+          <div id="margin-kpi" class="text-2xl font-black text-yellow-400 font-mono">—</div>
+          <p class="text-[10px] text-slate-500 mt-1">حسب بيانات الحاسبة الاقتصادية</p>
+        </div>
+      </div>
+
+      <!-- 12 critical controls -->
+      <div class="grid grid-cols-1 xl:grid-cols-12 gap-6 mb-8">
+        <div class="xl:col-span-7 bg-slate-900/65 rounded-2xl border border-slate-800 p-5">
+          <div class="flex items-center justify-between gap-3 mb-4">
+            <div>
+              <h4 class="font-bold text-white flex items-center gap-2"><i data-lucide="clipboard-check" class="w-4 h-4 text-amber-400"></i> قائمة التحكم المهني قبل التسويق</h4>
+              <p class="text-[11px] text-slate-400 mt-1">تُحفظ العلامات تلقائياً على هذا الجهاز لتسهيل المتابعة اليومية.</p>
+            </div>
+            <span id="readiness-label" class="text-[10px] px-2.5 py-1 rounded-full bg-slate-950 border border-slate-800 text-slate-400 font-bold">قيد الإعداد</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5" id="pilotage-checklist">
+            <label class="pilot-check flex items-start gap-2.5 p-3 rounded-xl bg-slate-950/60 border border-slate-800 cursor-pointer hover:border-amber-500/40"><input type="checkbox" data-control="governance" class="mt-0.5 accent-amber-500"><span><strong class="text-xs text-white block">الحكامة والالتزامات</strong><small class="text-[10px] text-slate-400">نظام داخلي، مسؤوليات، ميثاق المنخرطين.</small></span></label>
+            <label class="pilot-check flex items-start gap-2.5 p-3 rounded-xl bg-slate-950/60 border border-slate-800 cursor-pointer hover:border-amber-500/40"><input type="checkbox" data-control="apiary-register" class="mt-0.5 accent-amber-500"><span><strong class="text-xs text-white block">سجل المناحل والمواقع</strong><small class="text-[10px] text-slate-400">المواقع، الخلايا، الملكات، التدخلات.</small></span></label>
+            <label class="pilot-check flex items-start gap-2.5 p-3 rounded-xl bg-slate-950/60 border border-slate-800 cursor-pointer hover:border-amber-500/40"><input type="checkbox" data-control="health" class="mt-0.5 accent-amber-500"><span><strong class="text-xs text-white block">البرنامج الصحي</strong><small class="text-[10px] text-slate-400">مراقبة الفاروا، سجل العلاجات، العزل.</small></span></label>
+            <label class="pilot-check flex items-start gap-2.5 p-3 rounded-xl bg-slate-950/60 border border-slate-800 cursor-pointer hover:border-amber-500/40"><input type="checkbox" data-control="feeding" class="mt-0.5 accent-amber-500"><span><strong class="text-xs text-white block">ضبط التغذية</strong><small class="text-[10px] text-slate-400">تواريخ التغذية والتوقف قبل الفيض.</small></span></label>
+            <label class="pilot-check flex items-start gap-2.5 p-3 rounded-xl bg-slate-950/60 border border-slate-800 cursor-pointer hover:border-amber-500/40"><input type="checkbox" data-control="harvest" class="mt-0.5 accent-amber-500"><span><strong class="text-xs text-white block">معايير الجني</strong><small class="text-[10px] text-slate-400">نضج الإطارات، منع الحضنة، نظافة النقل.</small></span></label>
+            <label class="pilot-check flex items-start gap-2.5 p-3 rounded-xl bg-slate-950/60 border border-slate-800 cursor-pointer hover:border-amber-500/40"><input type="checkbox" data-control="hygiene" class="mt-0.5 accent-amber-500"><span><strong class="text-xs text-white block">برنامج النظافة والتطهير</strong><small class="text-[10px] text-slate-400">خطة تنظيف، مواد، تردد، مسؤول.</small></span></label>
+            <label class="pilot-check flex items-start gap-2.5 p-3 rounded-xl bg-slate-950/60 border border-slate-800 cursor-pointer hover:border-amber-500/40"><input type="checkbox" data-control="equipment" class="mt-0.5 accent-amber-500"><span><strong class="text-xs text-white block">مطابقة وصيانة التجهيزات</strong><small class="text-[10px] text-slate-400">حالة الفراز، المنضجات، الموازين والمكسار.</small></span></label>
+            <label class="pilot-check flex items-start gap-2.5 p-3 rounded-xl bg-slate-950/60 border border-slate-800 cursor-pointer hover:border-amber-500/40"><input type="checkbox" data-control="lot" class="mt-0.5 accent-amber-500"><span><strong class="text-xs text-white block">تتبع الدفعة</strong><small class="text-[10px] text-slate-400">رقم فريد، منشأ، كميات، تواريخ وتحاليل.</small></span></label>
+            <label class="pilot-check flex items-start gap-2.5 p-3 rounded-xl bg-slate-950/60 border border-slate-800 cursor-pointer hover:border-amber-500/40"><input type="checkbox" data-control="analysis" class="mt-0.5 accent-amber-500"><span><strong class="text-xs text-white block">نتائج التحاليل</strong><small class="text-[10px] text-slate-400">قرار قبول/عزل موثق لكل دفعة.</small></span></label>
+            <label class="pilot-check flex items-start gap-2.5 p-3 rounded-xl bg-slate-950/60 border border-slate-800 cursor-pointer hover:border-amber-500/40"><input type="checkbox" data-control="label" class="mt-0.5 accent-amber-500"><span><strong class="text-xs text-white block">مراجعة بطاقة البيان</strong><small class="text-[10px] text-slate-400">هوية المنتج، الوزن، lot، التواريخ والمشغل.</small></span></label>
+            <label class="pilot-check flex items-start gap-2.5 p-3 rounded-xl bg-slate-950/60 border border-slate-800 cursor-pointer hover:border-amber-500/40"><input type="checkbox" data-control="stock" class="mt-0.5 accent-amber-500"><span><strong class="text-xs text-white block">المخزون وFEFO/FIFO</strong><small class="text-[10px] text-slate-400">دفعات، كميات، تواريخ دخول وخروج.</small></span></label>
+            <label class="pilot-check flex items-start gap-2.5 p-3 rounded-xl bg-slate-950/60 border border-slate-800 cursor-pointer hover:border-amber-500/40"><input type="checkbox" data-control="sales" class="mt-0.5 accent-amber-500"><span><strong class="text-xs text-white block">ملف البيع والتوزيع</strong><small class="text-[10px] text-slate-400">قنوات، أسعار، زبناء، شكايات واسترجاع.</small></span></label>
+          </div>
+        </div>
+
+        <!-- Risk register -->
+        <div class="xl:col-span-5 bg-slate-900/65 rounded-2xl border border-slate-800 p-5">
+          <h4 class="font-bold text-white flex items-center gap-2 mb-4"><i data-lucide="triangle-alert" class="w-4 h-4 text-red-400"></i> سجل المخاطر والإجراءات الوقائية</h4>
+          <div class="space-y-2 text-xs">
+            <button onclick="toggleRisk('risk-health')" class="w-full text-right p-3 rounded-xl bg-slate-950/60 border border-slate-800 hover:border-red-500/40 transition"><span class="flex items-center justify-between"><strong class="text-red-300">خطر صحي بالمناحل</strong><span class="text-[10px] text-slate-500">فاروا / أمراض الحضنة</span></span></button>
+            <div id="risk-health" class="hidden p-3 rounded-xl bg-red-950/10 border border-red-500/20 text-slate-300 leading-relaxed">المؤشر المبكر: ارتفاع التساقط أو ضعف الحضنة. الإجراء: عزل المنحل المشتبه فيه، توثيق الحالة، تقييمها تقنياً، وتطبيق البرنامج الصحي المعتمد بصورة منسقة.</div>
+            <button onclick="toggleRisk('risk-quality')" class="w-full text-right p-3 rounded-xl bg-slate-950/60 border border-slate-800 hover:border-amber-500/40 transition"><span class="flex items-center justify-between"><strong class="text-amber-300">عدم مطابقة جودة دفعة</strong><span class="text-[10px] text-slate-500">رطوبة / HMF / بقايا</span></span></button>
+            <div id="risk-quality" class="hidden p-3 rounded-xl bg-amber-950/10 border border-amber-500/20 text-slate-300 leading-relaxed">الإجراء: إيقاف التعبئة أو الشحن، تعريف الدفعة وعزلها مادياً، فتح بطاقة عدم المطابقة، البحث عن السبب، ثم اتخاذ قرار موثق بشأن إعادة التصنيف أو الإتلاف أو الاستعمال المسموح.</div>
+            <button onclick="toggleRisk('risk-trace')" class="w-full text-right p-3 rounded-xl bg-slate-950/60 border border-slate-800 hover:border-blue-500/40 transition"><span class="flex items-center justify-between"><strong class="text-blue-300">فقدان التتبع</strong><span class="text-[10px] text-slate-500">خلط الدفعات / بيانات ناقصة</span></span></button>
+            <div id="risk-trace" class="hidden p-3 rounded-xl bg-blue-950/10 border border-blue-500/20 text-slate-300 leading-relaxed">الإجراء: منع خلط أي دفعة غير معرفة، تخصيص رقم lot قبل الاستخلاص الجماعي، وربط كل إدخال/إخراج بالكمية والمصدر والتاريخ والمشغل.</div>
+            <button onclick="toggleRisk('risk-market')" class="w-full text-right p-3 rounded-xl bg-slate-950/60 border border-slate-800 hover:border-purple-500/40 transition"><span class="flex items-center justify-between"><strong class="text-purple-300">مخاطر السوق والسيولة</strong><span class="text-[10px] text-slate-500">موسمية / مخزون بطيء</span></span></button>
+            <div id="risk-market" class="hidden p-3 rounded-xl bg-purple-950/10 border border-purple-500/20 text-slate-300 leading-relaxed">الإجراء: تنويع القنوات والأحجام، متابعة سرعة دوران المخزون، تحديد سعر أرضية يغطي التكلفة الكاملة، وإعداد برنامج مبيعات خارج ذروة الطلب الموسمية.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Traceability + economics -->
+      <div class="grid grid-cols-1 xl:grid-cols-2 gap-6 mb-8">
+        <div class="bg-slate-900/65 rounded-2xl border border-slate-800 p-5">
+          <div class="flex items-center justify-between gap-3 mb-4">
+            <div><h4 class="font-bold text-white flex items-center gap-2"><i data-lucide="qr-code" class="w-4 h-4 text-blue-400"></i> بطاقة تتبع دفعة العسل</h4><p class="text-[10px] text-slate-500 mt-1">نموذج داخلي مبسط يربط المصدر، الجني، الاستخلاص والتحليل.</p></div>
+            <button onclick="generateLotCard()" class="no-print px-3 py-1.5 rounded-xl bg-blue-500/15 border border-blue-500/30 text-blue-300 text-xs font-bold hover:bg-blue-500/25 transition">إنشاء البطاقة</button>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+            <label class="space-y-1"><span class="text-slate-400">رقم الدفعة *</span><input id="lot-number" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-white focus:border-amber-500 focus:outline-none" placeholder="مثال: MIEL-2026-001"></label>
+            <label class="space-y-1"><span class="text-slate-400">نوع / أصل العسل</span><input id="lot-origin" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-white focus:border-amber-500 focus:outline-none" placeholder="دغموس، زعتر، حوامض..."></label>
+            <label class="space-y-1"><span class="text-slate-400">المنحل / المنطقة</span><input id="lot-apiary" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-white focus:border-amber-500 focus:outline-none" placeholder="اسم الموقع أو الرمز"></label>
+            <label class="space-y-1"><span class="text-slate-400">تاريخ الجني</span><input type="date" id="lot-harvest" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-white focus:border-amber-500 focus:outline-none"></label>
+            <label class="space-y-1"><span class="text-slate-400">الكمية المستلمة (kg)</span><input type="number" min="0" step="0.1" id="lot-qty" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-white font-mono focus:border-amber-500 focus:outline-none" placeholder="0"></label>
+            <label class="space-y-1"><span class="text-slate-400">مسؤول التتبع</span><input id="lot-manager" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-white focus:border-amber-500 focus:outline-none" placeholder="الاسم / الصفة"></label>
+          </div>
+          <div id="lot-card-output" class="hidden mt-4 p-4 rounded-xl bg-blue-500/5 border border-blue-500/20 text-xs text-slate-300 whitespace-pre-line leading-relaxed"></div>
+        </div>
+
+        <div class="bg-slate-900/65 rounded-2xl border border-slate-800 p-5">
+          <div class="mb-4"><h4 class="font-bold text-white flex items-center gap-2"><i data-lucide="calculator" class="w-4 h-4 text-yellow-400"></i> الحاسبة الاقتصادية للدفعة</h4><p class="text-[10px] text-slate-500 mt-1">أداة تقديرية لاتخاذ القرار التجاري؛ لا تعوض المحاسبة الرسمية.</p></div>
+          <div class="grid grid-cols-2 gap-3 text-xs">
+            <label class="space-y-1"><span class="text-slate-400">الكمية القابلة للبيع (kg)</span><input type="number" id="eco-kg" min="0" step="0.1" value="100" oninput="calculateEconomics()" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-white font-mono focus:border-amber-500 focus:outline-none"></label>
+            <label class="space-y-1"><span class="text-slate-400">سعر البيع / kg (DH)</span><input type="number" id="eco-price" min="0" step="1" value="180" oninput="calculateEconomics()" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-white font-mono focus:border-amber-500 focus:outline-none"></label>
+            <label class="space-y-1"><span class="text-slate-400">تكلفة إنتاج / kg (DH)</span><input type="number" id="eco-cost" min="0" step="1" value="95" oninput="calculateEconomics()" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-white font-mono focus:border-amber-500 focus:outline-none"></label>
+            <label class="space-y-1"><span class="text-slate-400">تعبئة + لوجستيك (DH)</span><input type="number" id="eco-extra" min="0" step="1" value="2500" oninput="calculateEconomics()" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-white font-mono focus:border-amber-500 focus:outline-none"></label>
+          </div>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-4 text-center">
+            <div class="p-3 rounded-xl bg-slate-950/60 border border-slate-800"><span class="block text-[10px] text-slate-500">رقم المعاملات</span><strong id="eco-revenue" class="text-sm text-white font-mono">—</strong></div>
+            <div class="p-3 rounded-xl bg-slate-950/60 border border-slate-800"><span class="block text-[10px] text-slate-500">التكلفة الإجمالية</span><strong id="eco-total-cost" class="text-sm text-white font-mono">—</strong></div>
+            <div class="p-3 rounded-xl bg-slate-950/60 border border-slate-800"><span class="block text-[10px] text-slate-500">الهامش الإجمالي</span><strong id="eco-margin" class="text-sm text-amber-400 font-mono">—</strong></div>
+            <div class="p-3 rounded-xl bg-slate-950/60 border border-slate-800"><span class="block text-[10px] text-slate-500">نسبة الهامش</span><strong id="eco-margin-rate" class="text-sm text-emerald-400 font-mono">—</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Professional records -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <div class="p-4 rounded-2xl bg-slate-900 border border-slate-800">
+          <h5 class="font-bold text-amber-400 text-sm mb-2 flex items-center gap-2"><i data-lucide="folder-check" class="w-4 h-4"></i> السجلات الأساسية</h5>
+          <ul class="text-xs text-slate-300 space-y-1.5"><li>• سجل المنخرطين والمناحل والخلايا</li><li>• سجل المعالجات والتدخلات الصحية</li><li>• سجل الجني والاستلام والاستخلاص</li><li>• سجل الدفعات والتحاليل والإفراج</li><li>• سجل التنظيف والتطهير والصيانة</li></ul>
+        </div>
+        <div class="p-4 rounded-2xl bg-slate-900 border border-slate-800">
+          <h5 class="font-bold text-emerald-400 text-sm mb-2 flex items-center gap-2"><i data-lucide="graduation-cap" class="w-4 h-4"></i> خطة الكفاءات والتكوين</h5>
+          <ul class="text-xs text-slate-300 space-y-1.5"><li>• تربية النحل والمراقبة الصحية</li><li>• النظافة والممارسات الجيدة</li><li>• الاستعمال الآمن للتجهيزات</li><li>• التتبع، الوسم وإدارة الدفعات</li><li>• البيع، خدمة الزبون ومعالجة الشكايات</li></ul>
+        </div>
+        <div class="p-4 rounded-2xl bg-slate-900 border border-slate-800">
+          <h5 class="font-bold text-blue-400 text-sm mb-2 flex items-center gap-2"><i data-lucide="bar-chart-3" class="w-4 h-4"></i> مؤشرات شهرية مقترحة</h5>
+          <ul class="text-xs text-slate-300 space-y-1.5"><li>• kg عسل / خلية منتجة</li><li>• % خسائر المستعمرات</li><li>• % دفعات مطابقة من أول تحليل</li><li>• مردودية الاستخلاص والتعبئة</li><li>• دوران المخزون ومتوسط سعر البيع</li></ul>
+        </div>
+      </div>
+    </article>
+
+        <!-- INTERACTIVE LAB SIMULATOR -->
+    <article id="simulator-section" class="glass-card rounded-3xl p-6 sm:p-8 relative overflow-hidden border border-amber-500/40">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-5 mb-6 flex-wrap gap-4">
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="px-2.5 py-0.5 rounded text-[10px] font-black bg-amber-500 text-slate-950">تطبيق تفاعلي</span>
+            <span class="text-xs font-bold text-amber-400 uppercase tracking-widest">مختبر الجودة الرقمي</span>
+          </div>
+          <h3 class="text-xl sm:text-2xl font-bold text-white mt-1">محاكي مطابقة جودة العسل والتحاليل المخبرية</h3>
+        </div>
+        <button onclick="resetLabSimulator()" class="px-3.5 py-1.5 rounded-xl text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 flex items-center gap-1.5 transition">
+          <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i> استعادة القيم المرجعية
+        </button>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Form Inputs -->
+        <div class="lg:col-span-7 space-y-4">
+          <p class="text-xs text-slate-300">
+            أدخل نتائج التحاليل المخبرية للدفعة للتحقق فورياً من استيفائها للمعايير المغربية الرسمية <strong>NM 08.5.600</strong> ودستور الأغذية العالمي <strong>Codex Alimentarius</strong>.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            
+            <!-- Moisture -->
+            <div class="bg-slate-900/80 p-3.5 rounded-2xl border border-slate-800">
+              <label class="block text-xs font-bold text-slate-300 mb-1 flex items-center justify-between">
+                <span>نسبة الرطوبة (الماء)</span>
+                <span class="text-amber-400 font-mono">الأقصى 20%</span>
+              </label>
+              <div class="relative">
+                <input type="number" id="lab-moisture" step="0.1" value="17.5" oninput="runLabCheck()" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-white font-mono text-sm focus:border-amber-500 focus:outline-none">
+                <span class="absolute left-3 top-2.5 text-xs text-slate-500 font-mono">%</span>
+              </div>
+            </div>
+
+            <!-- HMF -->
+            <div class="bg-slate-900/80 p-3.5 rounded-2xl border border-slate-800">
+              <label class="block text-xs font-bold text-slate-300 mb-1 flex items-center justify-between">
+                <span>مؤشر HMF (الطزاجة)</span>
+                <span class="text-amber-400 font-mono">الأقصى 40 mg/kg</span>
+              </label>
+              <div class="relative">
+                <input type="number" id="lab-hmf" step="1" value="12" oninput="runLabCheck()" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-white font-mono text-sm focus:border-amber-500 focus:outline-none">
+                <span class="absolute left-3 top-2.5 text-xs text-slate-500 font-mono">mg/kg</span>
+              </div>
+            </div>
+
+            <!-- Diastase -->
+            <div class="bg-slate-900/80 p-3.5 rounded-2xl border border-slate-800">
+              <label class="block text-xs font-bold text-slate-300 mb-1 flex items-center justify-between">
+                <span>إنزيم الدياستاز النشط</span>
+                <span class="text-amber-400 font-mono">الأدنى 8 Schade</span>
+              </label>
+              <div class="relative">
+                <input type="number" id="lab-diastase" step="0.5" value="15.2" oninput="runLabCheck()" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-white font-mono text-sm focus:border-amber-500 focus:outline-none">
+                <span class="absolute left-3 top-2.5 text-xs text-slate-500 font-mono">Schade</span>
+              </div>
+            </div>
+
+            <!-- Sucrose -->
+            <div class="bg-slate-900/80 p-3.5 rounded-2xl border border-slate-800">
+              <label class="block text-xs font-bold text-slate-300 mb-1 flex items-center justify-between">
+                <span>السكروز الظاهري</span>
+                <span class="text-amber-400 font-mono">الأقصى 5 g/100g</span>
+              </label>
+              <div class="relative">
+                <input type="number" id="lab-sucrose" step="0.1" value="2.1" oninput="runLabCheck()" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-white font-mono text-sm focus:border-amber-500 focus:outline-none">
+                <span class="absolute left-3 top-2.5 text-xs text-slate-500 font-mono">g%</span>
+              </div>
+            </div>
+
+            <!-- Reducing Sugars -->
+            <div class="bg-slate-900/80 p-3.5 rounded-2xl border border-slate-800">
+              <label class="block text-xs font-bold text-slate-300 mb-1 flex items-center justify-between">
+                <span>السكريات المرجعة (G+F)</span>
+                <span class="text-amber-400 font-mono">الأدنى 60 g/100g</span>
+              </label>
+              <div class="relative">
+                <input type="number" id="lab-reduc" step="0.5" value="70.5" oninput="runLabCheck()" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-white font-mono text-sm focus:border-amber-500 focus:outline-none">
+                <span class="absolute left-3 top-2.5 text-xs text-slate-500 font-mono">g%</span>
+              </div>
+            </div>
+
+            <!-- Residues -->
+            <div class="bg-slate-900/80 p-3.5 rounded-2xl border border-slate-800">
+              <label class="block text-xs font-bold text-slate-300 mb-1 flex items-center justify-between">
+                <span>المضادات الحيوية والمبيدات</span>
+                <span class="text-amber-400 font-mono">صفر تسامح</span>
+              </label>
+              <select id="lab-residues" onchange="runLabCheck()" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-white text-sm focus:border-amber-500 focus:outline-none">
+                <option value="none" selected>خلو تام (غير قابل للرصد 0 ppb)</option>
+                <option value="detected">وجود متبقيات كيميائية مرصودة</option>
+              </select>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Result Verdict Card -->
+        <div class="lg:col-span-5 bg-slate-900/90 rounded-3xl p-6 border border-slate-800 flex flex-col justify-between h-full space-y-6">
+          <div>
+            <div class="text-xs uppercase tracking-wider text-slate-400 font-bold mb-2">النتيجة المخبرية والتأشير الصحي</div>
+            
+            <div id="lab-verdict-box" class="p-4 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 flex items-center gap-3">
+              <div class="p-2.5 rounded-xl bg-emerald-500/20 text-emerald-300">
+                <i id="lab-verdict-icon" data-lucide="badge-check" class="w-7 h-7"></i>
+              </div>
+              <div>
+                <h4 id="lab-verdict-title" class="font-black text-base">الدفعة مطابقة تماماً للمعايير</h4>
+                <p id="lab-verdict-desc" class="text-xs text-slate-300">مؤهلة للتعبئة تحت علامة الجودة الممتازة والتسويق في الأسواق الكبرى والتصدير.</p>
+              </div>
+            </div>
+
+            <!-- Parameter Indicators -->
+            <div class="mt-4 space-y-2 text-xs" id="lab-checklist">
+              <!-- Dynamically Populated -->
+            </div>
+          </div>
+
+          <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+            <span class="text-[11px] text-slate-500">معيار NM 08.5.600</span>
+            <button onclick="copyLabCertificate()" class="px-3.5 py-2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs rounded-xl flex items-center gap-1.5 transition active:scale-95 shadow-lg shadow-amber-500/20">
+              <i data-lucide="copy" class="w-3.5 h-3.5"></i> نسخ شهادة المطابقة
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- ANNUAL MATRIX -->
+    <article id="annual-matrix" class="glass-card rounded-3xl p-6 sm:p-8 relative overflow-hidden">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-5 mb-6 flex-wrap gap-4">
+        <div class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-2xl bg-amber-500 text-slate-950 flex items-center justify-center font-black text-xl shadow-lg shadow-amber-500/25">
+            <i data-lucide="calendar" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <span class="text-xs font-extrabold text-amber-400 uppercase tracking-widest">البرمجة الزمنية السنوية</span>
+            <h3 class="text-xl sm:text-2xl font-bold text-white">مصفوفة التدبير السنوي للتعاونية والمنخرطين</h3>
+          </div>
+        </div>
+        
+        <!-- Filter Tabs -->
+        <div class="flex items-center gap-1 bg-slate-900 p-1.5 rounded-2xl border border-slate-800 text-xs">
+          <button onclick="filterMatrixView('all')" id="tab-ar-all" class="px-3 py-1.5 rounded-xl font-bold transition bg-amber-500 text-slate-950">عرض الكل</button>
+          <button onclick="filterMatrixView('rucher')" id="tab-ar-rucher" class="px-3 py-1.5 rounded-xl font-bold transition text-slate-400 hover:text-white">أعمال المنحل</button>
+          <button onclick="filterMatrixView('miellerie')" id="tab-ar-miellerie" class="px-3 py-1.5 rounded-xl font-bold transition text-slate-400 hover:text-white">أعمال التعاونية والوحدة</button>
+        </div>
+      </div>
+
+      <div class="space-y-4" id="matrix-rows-container">
+        
+        <!-- Row 1 -->
+        <div class="matrix-row-item p-5 rounded-2xl bg-slate-900/80 border border-slate-800 grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
+          <div class="md:col-span-3">
+            <span class="text-xs font-mono font-bold text-amber-400 bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">يناير — فبراير</span>
+            <div class="text-white font-bold text-sm mt-1.5">استئناف النشاط وتحضير الحوامض</div>
+          </div>
+          <div class="md:col-span-4 text-xs text-slate-300 row-rucher">
+            <strong class="text-slate-400 block text-[11px] uppercase mb-1">أشغال المنحل (الأعضاء النحالين) :</strong>
+            المعاينة الأولى، مراقبة مخزون العسل الشتوي، تزويد المناحل بمشارب ماء نقية، وبدء الترحال نحو بساتين الحوامض (الغرب وسوس).
+          </div>
+          <div class="md:col-span-5 text-xs text-slate-300 row-miellerie border-t md:border-t-0 md:border-r border-slate-800 pt-3 md:pt-0 md:pr-4">
+            <strong class="text-amber-400 block text-[11px] uppercase mb-1">أشغال التعاونية ووحدة الاستخلاص :</strong>
+            صيانة وتعقيم معدات الإينوكس، التزود بالشمع المصفى المنقوش، والتدقيق الداخلي للوثائق ومطابقة المنخرطين (SCI).
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="matrix-row-item p-5 rounded-2xl bg-slate-900/80 border border-slate-800 grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
+          <div class="md:col-span-3">
+            <span class="text-xs font-mono font-bold text-amber-400 bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">مارس — ماي</span>
+            <div class="text-white font-bold text-sm mt-1.5">مواسم الفيض الربيعي الكبرى</div>
+          </div>
+          <div class="md:col-span-4 text-xs text-slate-300 row-rucher">
+            <strong class="text-slate-400 block text-[11px] uppercase mb-1">أشغال المنحل (الأعضاء النحالين) :</strong>
+            تركيب العاسلات وحواجز الملكات، منع وتدبير التطريد الطبيعي، والترحال إلى غابات الكاليبتوس (المعمورة).
+          </div>
+          <div class="md:col-span-5 text-xs text-slate-300 row-miellerie border-t md:border-t-0 md:border-r border-slate-800 pt-3 md:pt-0 md:pr-4">
+            <strong class="text-amber-400 block text-[11px] uppercase mb-1">أشغال التعاونية ووحدة الاستخلاص :</strong>
+            استخلاص عسل زهر البرتقال، التصفية المزدوجة، النضج والترسيب 7-10 أيام، وتسجيل دفعات الجني بدقة.
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="matrix-row-item p-5 rounded-2xl bg-slate-900/80 border border-slate-800 grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
+          <div class="md:col-span-3">
+            <span class="text-xs font-mono font-bold text-amber-400 bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">يونيو — غشت</span>
+            <div class="text-white font-bold text-sm mt-1.5">أعسال الجبال والكروس المتخصصة</div>
+          </div>
+          <div class="md:col-span-4 text-xs text-slate-300 row-rucher">
+            <strong class="text-slate-400 block text-[11px] uppercase mb-1">أشغال المنحل (الأعضاء النحالين) :</strong>
+            الترحال لمراعي الدغموس الشوكي (الأطلس) والزعتر الجبلي، ومراقبة تشتية الإطارات (≥ 2/3) قبل الجني النهائي للعاسلات.
+          </div>
+          <div class="md:col-span-5 text-xs text-slate-300 row-miellerie border-t md:border-t-0 md:border-r border-slate-800 pt-3 md:pt-0 md:pr-4">
+            <strong class="text-amber-400 block text-[11px] uppercase mb-1">أشغال التعاونية ووحدة الاستخلاص :</strong>
+            استخلاص أعسال الكروس الفاخرة، أخذ عينات التحاليل المخبرية الفيزيوكيميائية، والتعبئة في برطمانات معقمة مع رقم التتبع.
+          </div>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="matrix-row-item p-5 rounded-2xl bg-slate-900/80 border border-slate-800 grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
+          <div class="md:col-span-3">
+            <span class="text-xs font-mono font-bold text-amber-400 bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">شتنبر — أكتوبر</span>
+            <div class="text-white font-bold text-sm mt-1.5">العلاج الموحد والتسويق</div>
+          </div>
+          <div class="md:col-span-4 text-xs text-slate-300 row-rucher">
+            <strong class="text-slate-400 block text-[11px] uppercase mb-1">أشغال المنحل (الأعضاء النحالين) :</strong>
+            العلاج الجماعي الإلزامي الموحد ضد الفاروا، تضييق حجم الصناديق للتشتية، وتجديد 20-33% من الإطارات القديمة.
+          </div>
+          <div class="md:col-span-5 text-xs text-slate-300 row-miellerie border-t md:border-t-0 md:border-r border-slate-800 pt-3 md:pt-0 md:pr-4">
+            <strong class="text-amber-400 block text-[11px] uppercase mb-1">أشغال التعاونية ووحدة الاستخلاص :</strong>
+            انطلاق تسويق الأعسال الموسومة في المعارض الجهوية والمساحات التجارية الكبرى (GMS)، وإعداد الحصيلة السنوية.
+          </div>
+        </div>
+
+        <!-- Row 5 -->
+        <div class="matrix-row-item p-5 rounded-2xl bg-slate-900/80 border border-slate-800 grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
+          <div class="md:col-span-3">
+            <span class="text-xs font-mono font-bold text-amber-400 bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">نونبر — دجنبر</span>
+            <div class="text-white font-bold text-sm mt-1.5">التشتية والتدريب والتطوير</div>
+          </div>
+          <div class="md:col-span-4 text-xs text-slate-300 row-rucher">
+            <strong class="text-slate-400 block text-[11px] uppercase mb-1">أشغال المنحل (الأعضاء النحالين) :</strong>
+            تغذية شتوية مركزة عند الحاجة، العلاج الشتوي الثاني ضد الفاروا في غياب الحضنة، وتطهير الصناديق الاحتياطية بالمشعل الحراري.
+          </div>
+          <div class="md:col-span-5 text-xs text-slate-300 row-miellerie border-t md:border-t-0 md:border-r border-slate-800 pt-3 md:pt-0 md:pr-4">
+            <strong class="text-amber-400 block text-[11px] uppercase mb-1">أشغال التعاونية ووحدة الاستخلاص :</strong>
+            تنظيم ورشات تكوين تقني للأعضاء، إطلاق حملات ترويجية لاستهلاك العسل الصحي، وإعداد عقود التوريد للموسم المقبل.
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+  </main>
+
+  <footer class="glass-card border-t border-slate-800 bg-slate-950 mt-16 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+      <div class="flex items-center space-x-2 space-x-reverse">
+        <i data-lucide="shield" class="w-4 h-4 text-amber-400"></i>
+        <span>الوثيقة المرجعية الرسمية لمخطط عمل التعاونية الفلاحية لتربية النحل وإنتاج العسل</span>
+      </div>
+      <div>
+        المرجعيات التقنية : FAO / Apimondia • المكتب الوطني للسلامة الصحية (ONSSA) • NM 08.5.600
+      </div>
+    </div>
+  </footer>
+
+  <!-- Notification Toast Container -->
+  <div id="ar-toast" class="fixed bottom-6 left-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-amber-500 text-slate-950 px-4 py-2.5 rounded-2xl font-bold text-xs shadow-2xl flex items-center gap-2 pointer-events-none">
+    <i data-lucide="check" class="w-4 h-4"></i>
+    <span id="ar-toast-text">تمت العملية بنجاح</span>
+  </div>
+
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Smooth scroll helper
+    function scrollToSection(id) {
+      const target = document.getElementById(id);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        target.classList.add('ring-2', 'ring-amber-400');
+        setTimeout(() => {
+          target.classList.remove('ring-2', 'ring-amber-400');
+        }, 1500);
+      }
+    }
+
+    // Laboratory Quality Simulator
+    function runLabCheck() {
+      const moisture = parseFloat(document.getElementById('lab-moisture').value) || 0;
+      const hmf = parseFloat(document.getElementById('lab-hmf').value) || 0;
+      const diastase = parseFloat(document.getElementById('lab-diastase').value) || 0;
+      const sucrose = parseFloat(document.getElementById('lab-sucrose').value) || 0;
+      const reduc = parseFloat(document.getElementById('lab-reduc').value) || 0;
+      const residues = document.getElementById('lab-residues').value;
+
+      const okMoisture = moisture <= 20;
+      const okHmf = hmf <= 40;
+      const okDiastase = diastase >= 8;
+      const okSucrose = sucrose <= 5;
+      const okReduc = reduc >= 60;
+      const okResidues = (residues === 'none');
+
+      const isCompliant = okMoisture && okHmf && okDiastase && okSucrose && okReduc && okResidues;
+
+      const box = document.getElementById('lab-verdict-box');
+      const title = document.getElementById('lab-verdict-title');
+      const desc = document.getElementById('lab-verdict-desc');
+      const checklist = document.getElementById('lab-checklist');
+
+      if (isCompliant) {
+        box.className = "p-4 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 flex items-center gap-3";
+        title.innerText = "الدفعة مطابقة تماماً للمعايير (Codex / ONSSA)";
+        desc.innerText = "العسل يستوفي كل الشروط الفيزيوكيميائية والصحية، ومؤهل للتعليب بعلامة الجودة والتصدير.";
+      } else {
+        box.className = "p-4 rounded-2xl bg-red-500/10 border border-red-500/30 text-red-400 flex items-center gap-3";
+        title.innerText = "رصد عدم مطابقة (تجريد من الصنف)";
+        desc.innerText = "تنبيه: عنصر واحد أو أكثر تجاوز الحدود القانونية المسموح بها. يجب عزل هذه الدفعة.";
+      }
+
+      checklist.innerHTML = `
+        <div class="flex items-center justify-between p-2 rounded-xl ${okMoisture ? 'bg-slate-950/40 text-slate-300' : 'bg-red-500/10 text-red-300 border border-red-500/20'}">
+          <span>الرطوبة (أقل من أو يساوي 20%)</span>
+          <span class="font-mono font-bold">${moisture}% ${okMoisture ? '✓ مطابق' : '✗ غير مطابق'}</span>
+        </div>
+        <div class="flex items-center justify-between p-2 rounded-xl ${okHmf ? 'bg-slate-950/40 text-slate-300' : 'bg-red-500/10 text-red-300 border border-red-500/20'}">
+          <span>مؤشر HMF (أقل من أو يساوي 40 ملغ/كلغ)</span>
+          <span class="font-mono font-bold">${hmf} mg/kg ${okHmf ? '✓ طازج' : '✗ متدهور حرارياً'}</span>
+        </div>
+        <div class="flex items-center justify-between p-2 rounded-xl ${okDiastase ? 'bg-slate-950/40 text-slate-300' : 'bg-red-500/10 text-red-300 border border-red-500/20'}">
+          <span>إنزيم الدياستاز (أكبر من أو يساوي 8)</span>
+          <span class="font-mono font-bold">${diastase} ${okDiastase ? '✓ إنزيم حي' : '✗ فاقد للحيوية'}</span>
+        </div>
+        <div class="flex items-center justify-between p-2 rounded-xl ${okSucrose ? 'bg-slate-950/40 text-slate-300' : 'bg-red-500/10 text-red-300 border border-red-500/20'}">
+          <span>السكروز (أقل من أو يساوي 5%)</span>
+          <span class="font-mono font-bold">${sucrose}% ${okSucrose ? '✓ طبيعي' : '✗ شبهة تغذية سكرية'}</span>
+        </div>
+        <div class="flex items-center justify-between p-2 rounded-xl ${okResidues ? 'bg-slate-950/40 text-slate-300' : 'bg-red-500/10 text-red-300 border border-red-500/20'}">
+          <span>المضادات والمبيدات الكيماوية</span>
+          <span class="font-bold">${okResidues ? 'سليم تماماً ✓' : 'ملوث بمتبقيات ✗'}</span>
+        </div>
+      `;
+
+      lucide.createIcons();
+    }
+
+    function resetLabSimulator() {
+      document.getElementById('lab-moisture').value = "17.5";
+      document.getElementById('lab-hmf').value = "12";
+      document.getElementById('lab-diastase').value = "15.2";
+      document.getElementById('lab-sucrose').value = "2.1";
+      document.getElementById('lab-reduc').value = "70.5";
+      document.getElementById('lab-residues').value = "none";
+      runLabCheck();
+      showArabicToast("تمت استعادة القيم المعيارية بنجاح");
+    }
+
+    function copyLabCertificate() {
+      const moisture = document.getElementById('lab-moisture').value;
+      const hmf = document.getElementById('lab-hmf').value;
+      const diastase = document.getElementById('lab-diastase').value;
+      const sucrose = document.getElementById('lab-sucrose').value;
+      const residues = document.getElementById('lab-residues').value === 'none' ? 'منعدمة (0 ppb)' : 'مرصودة';
+
+      const certText = `[بطاقة مراقبة الجودة والتحليل المخبري - تعاونية إنتاج العسل]
+المطابقة : NM 08.5.600 / Codex Stan 12-1981
+- نسبة الرطوبة : ${moisture}% (الحد الأقصى 20%)
+- مؤشر HMF : ${hmf} mg/kg (الحد الأقصى 40 mg/kg)
+- إنزيم الدياستاز : ${diastase} Schade (الحد الأدنى 8)
+- السكروز : ${sucrose}% (الحد الأقصى 5%)
+- المتبقيات الكيماوية : ${residues}
+القرار الصحي : ${parseFloat(moisture)<=20 && parseFloat(hmf)<=40 && residues==='none' ? 'دفعة مطابقة مصادق عليها للتعبئة والتسويق الممتاز' : 'دفعة غير مطابقة - عزل فوري'}
+توقيع مسؤول المراقبة والجودة (SCI) : ____________________`;
+
+      const input = document.createElement("textarea");
+      input.value = certText;
+      document.body.appendChild(input);
+      input.select();
+      try {
+        document.execCommand('copy');
+        showArabicToast("تم نسخ شهادة المطابقة إلى الحافظة بنجاح !");
+      } catch (err) {
+        showArabicToast("تعذر النسخ التلقائي.");
+      }
+      document.body.removeChild(input);
+    }
+
+    // Annual Matrix Filters
+    function filterMatrixView(filter) {
+      const rows = document.querySelectorAll('.matrix-row-item');
+      const tabs = {
+        'all': document.getElementById('tab-ar-all'),
+        'rucher': document.getElementById('tab-ar-rucher'),
+        'miellerie': document.getElementById('tab-ar-miellerie')
+      };
+
+      Object.values(tabs).forEach(tab => {
+        tab.className = "px-3 py-1.5 rounded-xl font-bold transition text-slate-400 hover:text-white";
+      });
+      tabs[filter].className = "px-3 py-1.5 rounded-xl font-bold transition bg-amber-500 text-slate-950";
+
+      rows.forEach(row => {
+        const rucherBox = row.querySelector('.row-rucher');
+        const miellerieBox = row.querySelector('.row-miellerie');
+
+        if (filter === 'rucher') {
+          rucherBox.style.display = 'block';
+          miellerieBox.style.display = 'none';
+        } else if (filter === 'miellerie') {
+          rucherBox.style.display = 'none';
+          miellerieBox.style.display = 'block';
+        } else {
+          rucherBox.style.display = 'block';
+          miellerieBox.style.display = 'block';
+        }
+      });
+    }
+
+
+
+    // Professional dashboard state & checklist
+    const PILOTAGE_STORAGE_KEY = 'apiculturePilotageProV1';
+
+    function updateReadiness() {
+      const boxes = Array.from(document.querySelectorAll('#pilotage-checklist input[type="checkbox"]'));
+      const done = boxes.filter(b => b.checked).length;
+      const total = boxes.length || 12;
+      const pct = Math.round((done / total) * 100);
+      const pctEl = document.getElementById('readiness-percent');
+      const bar = document.getElementById('readiness-bar');
+      const doneEl = document.getElementById('controls-done');
+      const label = document.getElementById('readiness-label');
+      if (pctEl) pctEl.textContent = pct + '%';
+      if (bar) bar.style.width = pct + '%';
+      if (doneEl) doneEl.textContent = done;
+      if (label) {
+        if (pct === 100) { label.textContent = 'جاهز للتقييم النهائي'; label.className='text-[10px] px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 font-bold'; }
+        else if (pct >= 67) { label.textContent = 'جاهزية متقدمة'; label.className='text-[10px] px-2.5 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 font-bold'; }
+        else { label.textContent = 'قيد الإعداد'; label.className='text-[10px] px-2.5 py-1 rounded-full bg-slate-950 border border-slate-800 text-slate-400 font-bold'; }
+      }
+      return {done,total,pct};
+    }
+
+    function collectPilotageState() {
+      const checks = {};
+      document.querySelectorAll('#pilotage-checklist input[type="checkbox"]').forEach(b => checks[b.dataset.control] = b.checked);
+      const fields = {};
+      ['lot-number','lot-origin','lot-apiary','lot-harvest','lot-qty','lot-manager','eco-kg','eco-price','eco-cost','eco-extra'].forEach(id => {
+        const el=document.getElementById(id); if(el) fields[id]=el.value;
+      });
+      return {checks, fields, savedAt: new Date().toISOString()};
+    }
+
+    function savePilotageState(silent=false) {
+      try {
+        localStorage.setItem(PILOTAGE_STORAGE_KEY, JSON.stringify(collectPilotageState()));
+        if(!silent) showArabicToast('تم حفظ بيانات لوحة القيادة على هذا الجهاز');
+      } catch(e) { if(!silent) showArabicToast('تعذر الحفظ المحلي في هذا المتصفح'); }
+    }
+
+    function loadPilotageState() {
+      try {
+        const raw=localStorage.getItem(PILOTAGE_STORAGE_KEY); if(!raw) return;
+        const state=JSON.parse(raw);
+        document.querySelectorAll('#pilotage-checklist input[type="checkbox"]').forEach(b => { if(state.checks && b.dataset.control in state.checks) b.checked=!!state.checks[b.dataset.control]; });
+        if(state.fields) Object.entries(state.fields).forEach(([id,val]) => { const el=document.getElementById(id); if(el) el.value=val; });
+      } catch(e) {}
+    }
+
+    function resetPilotageState() {
+      document.querySelectorAll('#pilotage-checklist input[type="checkbox"]').forEach(b => b.checked=false);
+      ['lot-number','lot-origin','lot-apiary','lot-harvest','lot-qty','lot-manager'].forEach(id => { const el=document.getElementById(id); if(el) el.value=''; });
+      const out=document.getElementById('lot-card-output'); if(out){out.classList.add('hidden');out.textContent='';}
+      const lotStatus=document.getElementById('lot-status-kpi'); if(lotStatus) lotStatus.textContent='غير مُنشأة';
+      const lotSub=document.getElementById('lot-status-sub'); if(lotSub) lotSub.textContent='أنشئ بطاقة تتبع للدفعة';
+      try { localStorage.removeItem(PILOTAGE_STORAGE_KEY); } catch(e) {}
+      updateReadiness(); calculateEconomics(); showArabicToast('تمت إعادة ضبط لوحة القيادة');
+    }
+
+    function generateLotCard() {
+      const n=document.getElementById('lot-number').value.trim();
+      if(!n){ showArabicToast('أدخل رقم الدفعة أولاً'); document.getElementById('lot-number').focus(); return; }
+      const origin=document.getElementById('lot-origin').value.trim() || 'غير محدد';
+      const apiary=document.getElementById('lot-apiary').value.trim() || 'غير محدد';
+      const harvest=document.getElementById('lot-harvest').value || 'غير محدد';
+      const qty=document.getElementById('lot-qty').value || '0';
+      const manager=document.getElementById('lot-manager').value.trim() || 'غير محدد';
+      const text=`بطاقة تتبع الدفعة: ${n}\n• نوع / أصل العسل: ${origin}\n• المنحل / المنطقة: ${apiary}\n• تاريخ الجني: ${harvest}\n• الكمية المستلمة: ${qty} kg\n• مسؤول التتبع: ${manager}\n• الحالة: في انتظار ربط نتائج التحاليل وقرار الإفراج`;
+      const out=document.getElementById('lot-card-output'); out.textContent=text; out.classList.remove('hidden');
+      document.getElementById('lot-status-kpi').textContent=n;
+      document.getElementById('lot-status-kpi').className='text-lg font-black text-blue-300 truncate';
+      document.getElementById('lot-status-sub').textContent='بطاقة تتبع منشأة';
+      const lotCheck=document.querySelector('#pilotage-checklist input[data-control="lot"]'); if(lotCheck) lotCheck.checked=true;
+      updateReadiness(); savePilotageState(true); showArabicToast('تم إنشاء بطاقة الدفعة وربطها بالتتبع');
+    }
+
+    function calculateEconomics() {
+      const kg=parseFloat(document.getElementById('eco-kg')?.value)||0;
+      const price=parseFloat(document.getElementById('eco-price')?.value)||0;
+      const cost=parseFloat(document.getElementById('eco-cost')?.value)||0;
+      const extra=parseFloat(document.getElementById('eco-extra')?.value)||0;
+      const revenue=kg*price, total=kg*cost+extra, margin=revenue-total, rate=revenue>0 ? (margin/revenue*100) : 0;
+      const fmt=n => new Intl.NumberFormat('fr-MA',{maximumFractionDigits:0}).format(n)+' DH';
+      if(document.getElementById('eco-revenue')) document.getElementById('eco-revenue').textContent=fmt(revenue);
+      if(document.getElementById('eco-total-cost')) document.getElementById('eco-total-cost').textContent=fmt(total);
+      if(document.getElementById('eco-margin')) document.getElementById('eco-margin').textContent=fmt(margin);
+      if(document.getElementById('eco-margin-rate')) document.getElementById('eco-margin-rate').textContent=rate.toFixed(1)+'%';
+      if(document.getElementById('margin-kpi')) document.getElementById('margin-kpi').textContent=rate.toFixed(1)+'%';
+      savePilotageState(true);
+    }
+
+    function toggleRisk(id) {
+      const el=document.getElementById(id); if(el) el.classList.toggle('hidden');
+    }
+
+    function initProfessionalDashboard() {
+      loadPilotageState();
+      document.querySelectorAll('#pilotage-checklist input[type="checkbox"]').forEach(b => b.addEventListener('change',()=>{updateReadiness();savePilotageState(true);}));
+      ['lot-number','lot-origin','lot-apiary','lot-harvest','lot-qty','lot-manager'].forEach(id => { const el=document.getElementById(id); if(el) el.addEventListener('change',()=>savePilotageState(true)); });
+      updateReadiness(); calculateEconomics();
+    }
+
+    function showArabicToast(msg) {
+      const toast = document.getElementById('ar-toast');
+      document.getElementById('ar-toast-text').innerText = msg;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      setTimeout(() => {
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 3000);
+    }
+
+    // Run initial calculation
+    window.addEventListener('DOMContentLoaded', () => {
+      runLabCheck();
+    });
+  
+
+    // Initialize interactive professional modules after the DOM is ready.
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initProfessionalDashboard);
+    } else {
+      initProfessionalDashboard();
+    }
+</script>
+</body>
+</html>
